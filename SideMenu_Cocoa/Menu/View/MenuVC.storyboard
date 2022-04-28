@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MenuVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Side" id="Y6W-OH-hqX" customClass="MenuVC" customModule="SideMenu_Cocoa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abstract_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jNQ-vy-G6A">
+                                <rect key="frame" x="20" y="59" width="108" height="70"/>
+                                <color key="tintColor" red="0.82070463900000001" green="0.56339377160000004" blue="0.23910120130000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Kw1-AI-7D7"/>
+                                    <constraint firstAttribute="width" constant="108" id="RVZ-UX-l0V"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z6h-JY-emf">
+                                <rect key="frame" x="0.0" y="210" width="414" height="686"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z6h-JY-emf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7Mt-pB-v1T"/>
+                            <constraint firstItem="Z6h-JY-emf" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="JMD-Ja-ouC"/>
+                            <constraint firstItem="jNQ-vy-G6A" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="caj-d4-Rgf"/>
+                            <constraint firstItem="jNQ-vy-G6A" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="eGQ-H8-TsZ"/>
+                            <constraint firstItem="Z6h-JY-emf" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="210" id="g1T-nN-MLE"/>
+                            <constraint firstAttribute="bottom" secondItem="Z6h-JY-emf" secondAttribute="bottom" id="wGt-so-cgm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MenuTV" destination="Z6h-JY-emf" id="n85-hs-nIA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="abstract_logo" width="295" height="280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
